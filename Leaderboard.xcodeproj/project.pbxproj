@@ -15,7 +15,6 @@
 		50FAAB5D187CB6C5007DE001 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 50FAAB5C187CB6C5007DE001 /* main.m */; };
 		50FAAB61187CB6C5007DE001 /* lbAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 50FAAB60187CB6C5007DE001 /* lbAppDelegate.m */; };
 		50FAAB64187CB6C5007DE001 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50FAAB62187CB6C5007DE001 /* Main.storyboard */; };
-		50FAAB67187CB6C5007DE001 /* lbMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50FAAB66187CB6C5007DE001 /* lbMasterViewController.m */; };
 		50FAAB6A187CB6C5007DE001 /* lbDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50FAAB69187CB6C5007DE001 /* lbDetailViewController.m */; };
 		50FAAB6C187CB6C5007DE001 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50FAAB6B187CB6C5007DE001 /* Images.xcassets */; };
 		50FAAB73187CB6C5007DE001 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50FAAB72187CB6C5007DE001 /* XCTest.framework */; };
@@ -50,8 +49,6 @@
 		50FAAB5F187CB6C5007DE001 /* lbAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = lbAppDelegate.h; sourceTree = "<group>"; };
 		50FAAB60187CB6C5007DE001 /* lbAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = lbAppDelegate.m; sourceTree = "<group>"; };
 		50FAAB63187CB6C5007DE001 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		50FAAB65187CB6C5007DE001 /* lbMasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = lbMasterViewController.h; sourceTree = "<group>"; };
-		50FAAB66187CB6C5007DE001 /* lbMasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = lbMasterViewController.m; sourceTree = "<group>"; };
 		50FAAB68187CB6C5007DE001 /* lbDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = lbDetailViewController.h; sourceTree = "<group>"; };
 		50FAAB69187CB6C5007DE001 /* lbDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = lbDetailViewController.m; sourceTree = "<group>"; };
 		50FAAB6B187CB6C5007DE001 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -89,6 +86,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		50F922BE187DFEE200D005A0 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				50FAAB88187DAB2C007DE001 /* lbInitialViewController.h */,
+				50FAAB89187DAB2C007DE001 /* lbInitialViewController.m */,
+				50F922BB187DEDA300D005A0 /* lbMenuViewController.h */,
+				50F922BC187DEDA300D005A0 /* lbMenuViewController.m */,
+				50FAAB68187CB6C5007DE001 /* lbDetailViewController.h */,
+				50FAAB69187CB6C5007DE001 /* lbDetailViewController.m */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
 		50FAAB44187CB6C5007DE001 = {
 			isa = PBXGroup;
 			children = (
@@ -126,14 +136,7 @@
 				50FAAB60187CB6C5007DE001 /* lbAppDelegate.m */,
 				50FAAB62187CB6C5007DE001 /* Main.storyboard */,
 				50FAAB8B187DAC5B007DE001 /* lbConstants.h */,
-				50FAAB88187DAB2C007DE001 /* lbInitialViewController.h */,
-				50FAAB89187DAB2C007DE001 /* lbInitialViewController.m */,
-				50F922BB187DEDA300D005A0 /* lbMenuViewController.h */,
-				50F922BC187DEDA300D005A0 /* lbMenuViewController.m */,
-				50FAAB65187CB6C5007DE001 /* lbMasterViewController.h */,
-				50FAAB66187CB6C5007DE001 /* lbMasterViewController.m */,
-				50FAAB68187CB6C5007DE001 /* lbDetailViewController.h */,
-				50FAAB69187CB6C5007DE001 /* lbDetailViewController.m */,
+				50F922BE187DFEE200D005A0 /* View Controllers */,
 				50FAAB6B187CB6C5007DE001 /* Images.xcassets */,
 				50FAAB57187CB6C5007DE001 /* Supporting Files */,
 			);
@@ -269,7 +272,6 @@
 			files = (
 				50FAAB8A187DAB2C007DE001 /* lbInitialViewController.m in Sources */,
 				50FAAB61187CB6C5007DE001 /* lbAppDelegate.m in Sources */,
-				50FAAB67187CB6C5007DE001 /* lbMasterViewController.m in Sources */,
 				50F922BD187DEDA300D005A0 /* lbMenuViewController.m in Sources */,
 				50FAAB5D187CB6C5007DE001 /* main.m in Sources */,
 				50FAAB6A187CB6C5007DE001 /* lbDetailViewController.m in Sources */,

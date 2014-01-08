@@ -206,10 +206,10 @@
             </objects>
             <point key="canvasLocation" x="634" y="64"/>
         </scene>
-        <!--View Controller-->
+        <!--Lb Detail View Controller-->
         <scene sceneID="Ftg-WV-mzn">
             <objects>
-                <viewController id="Pvy-hl-Pyj" sceneMemberID="viewController">
+                <viewController id="Pvy-hl-Pyj" customClass="lbDetailViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="iPz-QB-g8Z"/>
                         <viewControllerLayoutGuide type="bottom" id="mnk-DL-VXv"/>
@@ -321,10 +321,10 @@
             </objects>
             <point key="canvasLocation" x="2118" y="64"/>
         </scene>
-        <!--View Controller-->
+        <!--Lb Detail View Controller-->
         <scene sceneID="eQn-lU-9aL">
             <objects>
-                <viewController id="soy-E7-DVd" sceneMemberID="viewController">
+                <viewController id="soy-E7-DVd" customClass="lbDetailViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="YdI-Vg-nf4"/>
                         <viewControllerLayoutGuide type="bottom" id="uih-Z9-2by"/>

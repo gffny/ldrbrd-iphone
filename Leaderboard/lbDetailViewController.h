@@ -1,5 +1,5 @@
 //
-//  lbMasterViewController.h
+//  lbDetailViewController.h
 //  Leaderboard
 //
 //  Created by John D. Gaffney on 1/7/14.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface lbMasterViewController : UITableViewController
+@interface lbDetailViewController : UIViewController
 
 @end

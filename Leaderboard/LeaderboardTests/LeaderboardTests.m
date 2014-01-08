@@ -1,6 +1,6 @@
 //
-//  ldrbrd_iphoneTests.m
-//  ldrbrd-iphoneTests
+//  LeaderboardTests.m
+//  LeaderboardTests
 //
 //  Created by John D. Gaffney on 1/7/14.
 //  Copyright (c) 2014 gffny.com. All rights reserved.
@@ -8,11 +8,11 @@
 
 #import <XCTest/XCTest.h>
 
-@interface ldrbrd_iphoneTests : XCTestCase
+@interface LeaderboardTests : XCTestCase
 
 @end
 
-@implementation ldrbrd_iphoneTests
+@implementation LeaderboardTests
 
 - (void)setUp
 {

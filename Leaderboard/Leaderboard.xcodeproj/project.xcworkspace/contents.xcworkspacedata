@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:ldrbrd-iphone.xcodeproj">
+      location = "self:Leaderboard.xcodeproj">
    </FileRef>
 </Workspace>

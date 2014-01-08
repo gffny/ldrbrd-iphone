@@ -4,7 +4,7 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>ldrbrd-iphone.xcscheme</key>
+		<key>Leaderboard.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
@@ -12,12 +12,12 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>50F477C9187C856700B5FF73</key>
+		<key>50FAAB4C187CB6C5007DE001</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>50F477E4187C856700B5FF73</key>
+		<key>50FAAB70187CB6C5007DE001</key>
 		<dict>
 			<key>primary</key>
 			<true/>

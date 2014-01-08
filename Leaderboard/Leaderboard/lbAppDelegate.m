@@ -1,6 +1,6 @@
 //
 //  lbAppDelegate.m
-//  ldrbrd-iphone
+//  Leaderboard
 //
 //  Created by John D. Gaffney on 1/7/14.
 //  Copyright (c) 2014 gffny.com. All rights reserved.
@@ -10,15 +10,14 @@
 
 @implementation lbAppDelegate
 
+@synthesize USER_VALIDATED;
+
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
-    self.window.backgroundColor = [UIColor whiteColor];
-    [self.window makeKeyAndVisible];
     return YES;
 }
-
+							
 - (void)applicationWillResignActive:(UIApplication *)application
 {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
@@ -45,5 +44,17 @@
 {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
+
+///methods required to save and restore application state via UIKit
+-(BOOL)application:(UIApplication *)application shouldRestoreApplicationState: (NSCoder *) coder
+{
+    return YES;
+}
+
+-(BOOL)application:(UIApplication *)application shouldSaveApplicationState:(NSCoder *)coder
+{
+    return YES;
+}
+
 
 @end

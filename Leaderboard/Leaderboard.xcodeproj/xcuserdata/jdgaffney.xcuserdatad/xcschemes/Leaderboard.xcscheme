@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "50F477C9187C856700B5FF73"
-               BuildableName = "ldrbrd-iphone.app"
-               BlueprintName = "ldrbrd-iphone"
-               ReferencedContainer = "container:ldrbrd-iphone.xcodeproj">
+               BlueprintIdentifier = "50FAAB4C187CB6C5007DE001"
+               BuildableName = "Leaderboard.app"
+               BlueprintName = "Leaderboard"
+               ReferencedContainer = "container:Leaderboard.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -32,20 +32,20 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "50F477E4187C856700B5FF73"
-               BuildableName = "ldrbrd-iphoneTests.xctest"
-               BlueprintName = "ldrbrd-iphoneTests"
-               ReferencedContainer = "container:ldrbrd-iphone.xcodeproj">
+               BlueprintIdentifier = "50FAAB70187CB6C5007DE001"
+               BuildableName = "LeaderboardTests.xctest"
+               BlueprintName = "LeaderboardTests"
+               ReferencedContainer = "container:Leaderboard.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "50F477C9187C856700B5FF73"
-            BuildableName = "ldrbrd-iphone.app"
-            BlueprintName = "ldrbrd-iphone"
-            ReferencedContainer = "container:ldrbrd-iphone.xcodeproj">
+            BlueprintIdentifier = "50FAAB4C187CB6C5007DE001"
+            BuildableName = "Leaderboard.app"
+            BlueprintName = "Leaderboard"
+            ReferencedContainer = "container:Leaderboard.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -61,10 +61,10 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "50F477C9187C856700B5FF73"
-            BuildableName = "ldrbrd-iphone.app"
-            BlueprintName = "ldrbrd-iphone"
-            ReferencedContainer = "container:ldrbrd-iphone.xcodeproj">
+            BlueprintIdentifier = "50FAAB4C187CB6C5007DE001"
+            BuildableName = "Leaderboard.app"
+            BlueprintName = "Leaderboard"
+            ReferencedContainer = "container:Leaderboard.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -79,10 +79,10 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "50F477C9187C856700B5FF73"
-            BuildableName = "ldrbrd-iphone.app"
-            BlueprintName = "ldrbrd-iphone"
-            ReferencedContainer = "container:ldrbrd-iphone.xcodeproj">
+            BlueprintIdentifier = "50FAAB4C187CB6C5007DE001"
+            BuildableName = "Leaderboard.app"
+            BlueprintName = "Leaderboard"
+            ReferencedContainer = "container:Leaderboard.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

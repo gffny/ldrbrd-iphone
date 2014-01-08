@@ -1,6 +1,6 @@
 //
 //  main.m
-//  ldrbrd-iphone
+//  Leaderboard
 //
 //  Created by John D. Gaffney on 1/7/14.
 //  Copyright (c) 2014 gffny.com. All rights reserved.

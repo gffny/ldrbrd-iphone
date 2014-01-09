@@ -10,4 +10,8 @@
 
 @interface lbDetailViewController : UIViewController
 
+- (IBAction)playRound:(id)sender forEvent:(UIEvent *)event;
+
+- (IBAction)courseChosen:(id)sender forEvent:(UIEvent *)event;
+
 @end

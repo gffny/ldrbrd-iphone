@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		50ED8C14187E077D00875211 /* lbAuthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50ED8C13187E077D00875211 /* lbAuthViewController.m */; };
+		50ED8C17187EF88F00875211 /* lbBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 50ED8C16187EF88F00875211 /* lbBaseView.m */; };
 		50F922BD187DEDA300D005A0 /* lbMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50F922BC187DEDA300D005A0 /* lbMenuViewController.m */; };
 		50FAAB51187CB6C5007DE001 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50FAAB50187CB6C5007DE001 /* Foundation.framework */; };
 		50FAAB53187CB6C5007DE001 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50FAAB52187CB6C5007DE001 /* CoreGraphics.framework */; };
@@ -36,6 +38,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		50ED8C12187E077D00875211 /* lbAuthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lbAuthViewController.h; sourceTree = "<group>"; };
+		50ED8C13187E077D00875211 /* lbAuthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = lbAuthViewController.m; sourceTree = "<group>"; };
+		50ED8C15187EF88F00875211 /* lbBaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lbBaseView.h; sourceTree = "<group>"; };
+		50ED8C16187EF88F00875211 /* lbBaseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = lbBaseView.m; sourceTree = "<group>"; };
 		50F922BB187DEDA300D005A0 /* lbMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lbMenuViewController.h; sourceTree = "<group>"; };
 		50F922BC187DEDA300D005A0 /* lbMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = lbMenuViewController.m; sourceTree = "<group>"; };
 		50FAAB4D187CB6C5007DE001 /* Leaderboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Leaderboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -95,6 +101,8 @@
 				50F922BC187DEDA300D005A0 /* lbMenuViewController.m */,
 				50FAAB68187CB6C5007DE001 /* lbDetailViewController.h */,
 				50FAAB69187CB6C5007DE001 /* lbDetailViewController.m */,
+				50ED8C12187E077D00875211 /* lbAuthViewController.h */,
+				50ED8C13187E077D00875211 /* lbAuthViewController.m */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -139,6 +147,8 @@
 				50F922BE187DFEE200D005A0 /* View Controllers */,
 				50FAAB6B187CB6C5007DE001 /* Images.xcassets */,
 				50FAAB57187CB6C5007DE001 /* Supporting Files */,
+				50ED8C15187EF88F00875211 /* lbBaseView.h */,
+				50ED8C16187EF88F00875211 /* lbBaseView.m */,
 			);
 			path = Leaderboard;
 			sourceTree = "<group>";
@@ -270,8 +280,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50ED8C17187EF88F00875211 /* lbBaseView.m in Sources */,
 				50FAAB8A187DAB2C007DE001 /* lbInitialViewController.m in Sources */,
 				50FAAB61187CB6C5007DE001 /* lbAppDelegate.m in Sources */,
+				50ED8C14187E077D00875211 /* lbAuthViewController.m in Sources */,
 				50F922BD187DEDA300D005A0 /* lbMenuViewController.m in Sources */,
 				50FAAB5D187CB6C5007DE001 /* main.m in Sources */,
 				50FAAB6A187CB6C5007DE001 /* lbDetailViewController.m in Sources */,

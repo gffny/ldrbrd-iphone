@@ -36,8 +36,8 @@
         [self performSegueWithIdentifier:seg_entryToHome sender:self];
     } else {
         //user is not authenticatedseg_entryToHome
-        //[self performSegueWithIdentifier:seg_entryToLogin sender:self];
-        [self performSegueWithIdentifier:seg_entryToHome sender:self];
+        [self performSegueWithIdentifier:seg_entryToLogin sender:self];
+        //[self performSegueWithIdentifier:seg_entryToHome sender:self];
     }
 }
 

@@ -26,15 +26,15 @@
             </objects>
             <point key="canvasLocation" x="-1187" y="64"/>
         </scene>
-        <!--View Controller-->
+        <!--Lb Auth View Controller-->
         <scene sceneID="t4o-Er-7r0">
             <objects>
-                <viewController id="Vrb-eJ-Wen" sceneMemberID="viewController">
+                <viewController id="Vrb-eJ-Wen" customClass="lbAuthViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="CbQ-1V-bBM"/>
                         <viewControllerLayoutGuide type="bottom" id="w8K-Gv-wEi"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="KzW-Mj-rYZ">
+                    <view key="view" contentMode="scaleToFill" id="KzW-Mj-rYZ" customClass="lbBaseView">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
@@ -60,13 +60,13 @@
                                 <color key="textColor" red="0.26616310586734693" green="0.26616310586734693" blue="0.26616310586734693" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2qx-xq-bUZ">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2qx-xq-bUZ">
                                 <rect key="frame" x="100" y="140" width="170" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fsD-U7-uXb">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fsD-U7-uXb">
                                 <rect key="frame" x="100" y="280" width="170" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -79,12 +79,17 @@
                                 <fontDescription key="fontDescription" name="DINCondensed-Bold" family="DIN Condensed" pointSize="22"/>
                                 <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <state key="normal" title="Login"/>
+                                <connections>
+                                    <action selector="loginBtn:forEvent:" destination="Vrb-eJ-Wen" eventType="touchUpInside" id="Vi0-TN-QxW"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.38906875471087837" green="0.56550940688775508" blue="0.28650385928106964" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="ADa-4I-fkF"/>
                     <connections>
+                        <outlet property="pwordField" destination="fsD-U7-uXb" id="vuS-L5-nLS"/>
+                        <outlet property="unameFld" destination="2qx-xq-bUZ" id="hQL-tU-b4X"/>
                         <segue destination="rS3-R9-Ivy" kind="modal" identifier="authToHomeSeg" id="ldd-fc-1kb"/>
                     </connections>
                 </viewController>
@@ -250,6 +255,9 @@
                                         <state key="normal" title="Grand Cypress DeBarra Course">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="courseChosen:forEvent:" destination="Pvy-hl-Pyj" eventType="touchUpInside" id="lVk-Wb-MTb"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U7b-11-4nq">
                                         <rect key="frame" x="20" y="266" width="243" height="50"/>
@@ -257,6 +265,9 @@
                                         <state key="normal" title="Grand Cypress O'Connor Course">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="courseChosen:forEvent:" destination="Pvy-hl-Pyj" eventType="touchUpInside" id="zVq-0e-Jta"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gwz-LL-80e">
                                         <rect key="frame" x="20" y="324" width="243" height="50"/>
@@ -264,6 +275,9 @@
                                         <state key="normal" title="Grand Cypress Gaffney Course">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="courseChosen:forEvent:" destination="Pvy-hl-Pyj" eventType="touchUpInside" id="GiQ-Bo-LFK"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6pv-bR-Jze">
                                         <rect key="frame" x="53" y="56" width="210" height="50"/>
@@ -271,6 +285,9 @@
                                         <state key="normal" title="Fresh Pond (9 Hole)">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="courseChosen:forEvent:" destination="Pvy-hl-Pyj" eventType="touchUpInside" id="Hkh-Fj-zUl"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D2D-tG-SMN">
                                         <rect key="frame" x="53" y="114" width="210" height="50"/>
@@ -278,6 +295,9 @@
                                         <state key="normal" title="ButterBrook (18 Hole)">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="courseChosen:forEvent:" destination="Pvy-hl-Pyj" eventType="touchUpInside" id="E4z-zf-eQJ"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -358,6 +378,9 @@
                                         <state key="normal" title="Play Round">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="playRound:forEvent:" destination="soy-E7-DVd" eventType="touchUpInside" id="DIx-zV-S0p"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -382,6 +405,6 @@
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
         <segue reference="ldd-fc-1kb"/>
-        <segue reference="yVp-re-YXm"/>
+        <segue reference="csF-vZ-c2V"/>
     </inferredMetricsTieBreakers>
 </document>

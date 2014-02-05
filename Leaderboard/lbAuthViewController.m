@@ -7,6 +7,7 @@
 //
 
 #import "lbAuthViewController.h"
+#import "lbCourseDao.h"
 
 @interface lbAuthViewController ()
 
@@ -37,6 +38,7 @@
 
 - (IBAction)loginBtn:(id)sender forEvent:(UIEvent *)event {
     //TODO login!
+    [lbCourseDao testAFNetworking];
     [self performSegueWithIdentifier:seg_loginToHome sender:self];
 }
 

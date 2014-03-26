@@ -7,8 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		502AAE18189ED422006BF9C5 /* lbCourseDao.m in Sources */ = {isa = PBXBuildFile; fileRef = 502AAE15189ECE23006BF9C5 /* lbCourseDao.m */; };
+		502DF62718D735B0001ED56E /* lbCredentialStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 502DF62618D735B0001ED56E /* lbCredentialStore.m */; };
+		502DF62A18D73718001ED56E /* lbCourseHoleDto.m in Sources */ = {isa = PBXBuildFile; fileRef = 502DF62818D73718001ED56E /* lbCourseHoleDto.m */; };
+		502DF62E18D73F32001ED56E /* lbAuthClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 502DF62D18D73F32001ED56E /* lbAuthClient.m */; };
+		5038530218AB3D50008E99D1 /* lbGolfPlayDao.m in Sources */ = {isa = PBXBuildFile; fileRef = 5038530118AB3D50008E99D1 /* lbGolfPlayDao.m */; };
 		50ED8C14187E077D00875211 /* lbAuthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50ED8C13187E077D00875211 /* lbAuthViewController.m */; };
 		50ED8C17187EF88F00875211 /* lbBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 50ED8C16187EF88F00875211 /* lbBaseView.m */; };
+		50F0103918A1BCD60047B5DB /* lbCourseDto.m in Sources */ = {isa = PBXBuildFile; fileRef = 50F0103818A1BCD60047B5DB /* lbCourseDto.m */; };
+		50F0104018A1F73F0047B5DB /* lbCourseHoleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50F0103F18A1F73F0047B5DB /* lbCourseHoleViewController.m */; };
+		50F0104318A28C0E0047B5DB /* lbCourseChoiceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50F0104218A28C0E0047B5DB /* lbCourseChoiceViewController.m */; };
+		50F0104618A9ADB20047B5DB /* lbRoundOverviewVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 50F0104518A9ADB20047B5DB /* lbRoundOverviewVC.m */; };
 		50F922BD187DEDA300D005A0 /* lbMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50F922BC187DEDA300D005A0 /* lbMenuViewController.m */; };
 		50FAAB51187CB6C5007DE001 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50FAAB50187CB6C5007DE001 /* Foundation.framework */; };
 		50FAAB53187CB6C5007DE001 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50FAAB52187CB6C5007DE001 /* CoreGraphics.framework */; };
@@ -25,6 +34,7 @@
 		50FAAB7D187CB6C5007DE001 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 50FAAB7B187CB6C5007DE001 /* InfoPlist.strings */; };
 		50FAAB7F187CB6C5007DE001 /* LeaderboardTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 50FAAB7E187CB6C5007DE001 /* LeaderboardTests.m */; };
 		50FAAB8A187DAB2C007DE001 /* lbInitialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50FAAB89187DAB2C007DE001 /* lbInitialViewController.m */; };
+		E95B3F1126BF46C597025072 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E00B66614A9B43D2BE867B7E /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,10 +48,29 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		019D83769C43405BB8879A3C /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		502AAE14189ECE23006BF9C5 /* lbCourseDao.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lbCourseDao.h; sourceTree = "<group>"; };
+		502AAE15189ECE23006BF9C5 /* lbCourseDao.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = lbCourseDao.m; sourceTree = "<group>"; };
+		502DF62518D735B0001ED56E /* lbCredentialStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lbCredentialStore.h; sourceTree = "<group>"; };
+		502DF62618D735B0001ED56E /* lbCredentialStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = lbCredentialStore.m; sourceTree = "<group>"; };
+		502DF62818D73718001ED56E /* lbCourseHoleDto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = lbCourseHoleDto.m; path = Leaderboard/lbCourseHoleDto.m; sourceTree = "<group>"; };
+		502DF62918D73718001ED56E /* lbCourseHoleDto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = lbCourseHoleDto.h; path = Leaderboard/lbCourseHoleDto.h; sourceTree = "<group>"; };
+		502DF62C18D73F32001ED56E /* lbAuthClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lbAuthClient.h; sourceTree = "<group>"; };
+		502DF62D18D73F32001ED56E /* lbAuthClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = lbAuthClient.m; sourceTree = "<group>"; };
+		5038530018AB3D50008E99D1 /* lbGolfPlayDao.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lbGolfPlayDao.h; sourceTree = "<group>"; };
+		5038530118AB3D50008E99D1 /* lbGolfPlayDao.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = lbGolfPlayDao.m; sourceTree = "<group>"; };
 		50ED8C12187E077D00875211 /* lbAuthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lbAuthViewController.h; sourceTree = "<group>"; };
 		50ED8C13187E077D00875211 /* lbAuthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = lbAuthViewController.m; sourceTree = "<group>"; };
 		50ED8C15187EF88F00875211 /* lbBaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lbBaseView.h; sourceTree = "<group>"; };
 		50ED8C16187EF88F00875211 /* lbBaseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = lbBaseView.m; sourceTree = "<group>"; };
+		50F0103718A1BCD60047B5DB /* lbCourseDto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = lbCourseDto.h; path = Leaderboard/lbCourseDto.h; sourceTree = "<group>"; };
+		50F0103818A1BCD60047B5DB /* lbCourseDto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = lbCourseDto.m; path = Leaderboard/lbCourseDto.m; sourceTree = "<group>"; };
+		50F0103E18A1F73F0047B5DB /* lbCourseHoleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lbCourseHoleViewController.h; sourceTree = "<group>"; };
+		50F0103F18A1F73F0047B5DB /* lbCourseHoleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = lbCourseHoleViewController.m; sourceTree = "<group>"; };
+		50F0104118A28C0E0047B5DB /* lbCourseChoiceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lbCourseChoiceViewController.h; sourceTree = "<group>"; };
+		50F0104218A28C0E0047B5DB /* lbCourseChoiceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = lbCourseChoiceViewController.m; sourceTree = "<group>"; };
+		50F0104418A9ADB20047B5DB /* lbRoundOverviewVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lbRoundOverviewVC.h; sourceTree = "<group>"; };
+		50F0104518A9ADB20047B5DB /* lbRoundOverviewVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = lbRoundOverviewVC.m; sourceTree = "<group>"; };
 		50F922BB187DEDA300D005A0 /* lbMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lbMenuViewController.h; sourceTree = "<group>"; };
 		50F922BC187DEDA300D005A0 /* lbMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = lbMenuViewController.m; sourceTree = "<group>"; };
 		50FAAB4D187CB6C5007DE001 /* Leaderboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Leaderboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -66,6 +95,7 @@
 		50FAAB88187DAB2C007DE001 /* lbInitialViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lbInitialViewController.h; sourceTree = "<group>"; };
 		50FAAB89187DAB2C007DE001 /* lbInitialViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = lbInitialViewController.m; sourceTree = "<group>"; };
 		50FAAB8B187DAC5B007DE001 /* lbConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = lbConstants.h; sourceTree = "<group>"; };
+		E00B66614A9B43D2BE867B7E /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +106,7 @@
 				50FAAB53187CB6C5007DE001 /* CoreGraphics.framework in Frameworks */,
 				50FAAB55187CB6C5007DE001 /* UIKit.framework in Frameworks */,
 				50FAAB51187CB6C5007DE001 /* Foundation.framework in Frameworks */,
+				E95B3F1126BF46C597025072 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,6 +123,49 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		502AAE17189ECE28006BF9C5 /* DAO */ = {
+			isa = PBXGroup;
+			children = (
+				502AAE14189ECE23006BF9C5 /* lbCourseDao.h */,
+				502AAE15189ECE23006BF9C5 /* lbCourseDao.m */,
+				5038530018AB3D50008E99D1 /* lbGolfPlayDao.h */,
+				5038530118AB3D50008E99D1 /* lbGolfPlayDao.m */,
+			);
+			name = DAO;
+			sourceTree = "<group>";
+		};
+		502DF62B18D73F04001ED56E /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				502DF62518D735B0001ED56E /* lbCredentialStore.h */,
+				502DF62618D735B0001ED56E /* lbCredentialStore.m */,
+				502DF62C18D73F32001ED56E /* lbAuthClient.h */,
+				502DF62D18D73F32001ED56E /* lbAuthClient.m */,
+			);
+			name = Auth;
+			sourceTree = "<group>";
+		};
+		5038530318AD782F008E99D1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				50ED8C15187EF88F00875211 /* lbBaseView.h */,
+				50ED8C16187EF88F00875211 /* lbBaseView.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		50F0103A18A1D41E0047B5DB /* DTO */ = {
+			isa = PBXGroup;
+			children = (
+				502DF62818D73718001ED56E /* lbCourseHoleDto.m */,
+				502DF62918D73718001ED56E /* lbCourseHoleDto.h */,
+				50F0103718A1BCD60047B5DB /* lbCourseDto.h */,
+				50F0103818A1BCD60047B5DB /* lbCourseDto.m */,
+			);
+			name = DTO;
+			path = ..;
+			sourceTree = "<group>";
+		};
 		50F922BE187DFEE200D005A0 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -103,6 +177,12 @@
 				50FAAB69187CB6C5007DE001 /* lbDetailViewController.m */,
 				50ED8C12187E077D00875211 /* lbAuthViewController.h */,
 				50ED8C13187E077D00875211 /* lbAuthViewController.m */,
+				50F0103E18A1F73F0047B5DB /* lbCourseHoleViewController.h */,
+				50F0103F18A1F73F0047B5DB /* lbCourseHoleViewController.m */,
+				50F0104118A28C0E0047B5DB /* lbCourseChoiceViewController.h */,
+				50F0104218A28C0E0047B5DB /* lbCourseChoiceViewController.m */,
+				50F0104418A9ADB20047B5DB /* lbRoundOverviewVC.h */,
+				50F0104518A9ADB20047B5DB /* lbRoundOverviewVC.m */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -114,6 +194,7 @@
 				50FAAB78187CB6C5007DE001 /* LeaderboardTests */,
 				50FAAB4F187CB6C5007DE001 /* Frameworks */,
 				50FAAB4E187CB6C5007DE001 /* Products */,
+				019D83769C43405BB8879A3C /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -133,6 +214,7 @@
 				50FAAB52187CB6C5007DE001 /* CoreGraphics.framework */,
 				50FAAB54187CB6C5007DE001 /* UIKit.framework */,
 				50FAAB72187CB6C5007DE001 /* XCTest.framework */,
+				E00B66614A9B43D2BE867B7E /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -144,11 +226,13 @@
 				50FAAB60187CB6C5007DE001 /* lbAppDelegate.m */,
 				50FAAB62187CB6C5007DE001 /* Main.storyboard */,
 				50FAAB8B187DAC5B007DE001 /* lbConstants.h */,
+				502DF62B18D73F04001ED56E /* Auth */,
 				50F922BE187DFEE200D005A0 /* View Controllers */,
+				5038530318AD782F008E99D1 /* View */,
+				502AAE17189ECE28006BF9C5 /* DAO */,
+				50F0103A18A1D41E0047B5DB /* DTO */,
 				50FAAB6B187CB6C5007DE001 /* Images.xcassets */,
 				50FAAB57187CB6C5007DE001 /* Supporting Files */,
-				50ED8C15187EF88F00875211 /* lbBaseView.h */,
-				50ED8C16187EF88F00875211 /* lbBaseView.m */,
 			);
 			path = Leaderboard;
 			sourceTree = "<group>";
@@ -189,9 +273,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 50FAAB82187CB6C5007DE001 /* Build configuration list for PBXNativeTarget "Leaderboard" */;
 			buildPhases = (
+				A8799B389EE64FCD99D9CC57 /* Check Pods Manifest.lock */,
 				50FAAB49187CB6C5007DE001 /* Sources */,
 				50FAAB4A187CB6C5007DE001 /* Frameworks */,
 				50FAAB4B187CB6C5007DE001 /* Resources */,
+				EAE16A86DE784C66A8CD04E6 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -275,17 +361,59 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		A8799B389EE64FCD99D9CC57 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		EAE16A86DE784C66A8CD04E6 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		50FAAB49187CB6C5007DE001 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				502AAE18189ED422006BF9C5 /* lbCourseDao.m in Sources */,
+				502DF62A18D73718001ED56E /* lbCourseHoleDto.m in Sources */,
+				50F0104618A9ADB20047B5DB /* lbRoundOverviewVC.m in Sources */,
 				50ED8C17187EF88F00875211 /* lbBaseView.m in Sources */,
+				50F0104318A28C0E0047B5DB /* lbCourseChoiceViewController.m in Sources */,
 				50FAAB8A187DAB2C007DE001 /* lbInitialViewController.m in Sources */,
 				50FAAB61187CB6C5007DE001 /* lbAppDelegate.m in Sources */,
 				50ED8C14187E077D00875211 /* lbAuthViewController.m in Sources */,
+				502DF62E18D73F32001ED56E /* lbAuthClient.m in Sources */,
 				50F922BD187DEDA300D005A0 /* lbMenuViewController.m in Sources */,
 				50FAAB5D187CB6C5007DE001 /* main.m in Sources */,
+				502DF62718D735B0001ED56E /* lbCredentialStore.m in Sources */,
+				5038530218AB3D50008E99D1 /* lbGolfPlayDao.m in Sources */,
+				50F0104018A1F73F0047B5DB /* lbCourseHoleViewController.m in Sources */,
+				50F0103918A1BCD60047B5DB /* lbCourseDto.m in Sources */,
 				50FAAB6A187CB6C5007DE001 /* lbDetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -410,6 +538,7 @@
 		};
 		50FAAB83187CB6C5007DE001 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 019D83769C43405BB8879A3C /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -417,12 +546,15 @@
 				GCC_PREFIX_HEADER = "Leaderboard/Leaderboard-Prefix.pch";
 				INFOPLIST_FILE = "Leaderboard/Leaderboard-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "$(BUILD_PRODUCTS_DIR)";
+				"USER_HEADER_SEARCH_PATHS[arch=*]" = "$(BUILD_PRODUCTS_DIR)";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
 		};
 		50FAAB84187CB6C5007DE001 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 019D83769C43405BB8879A3C /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -430,6 +562,8 @@
 				GCC_PREFIX_HEADER = "Leaderboard/Leaderboard-Prefix.pch";
 				INFOPLIST_FILE = "Leaderboard/Leaderboard-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "$(BUILD_PRODUCTS_DIR)";
+				"USER_HEADER_SEARCH_PATHS[arch=*]" = "$(BUILD_PRODUCTS_DIR)";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

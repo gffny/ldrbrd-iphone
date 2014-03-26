@@ -12,8 +12,6 @@
 
 - (IBAction)practiceRndBtn:(UIButton *)sender forEvent:(UIEvent *)event;
 
-- (IBAction)firstCompRndBtn:(UIButton *)sender forEvent:(UIEvent *)event;
-
-- (IBAction)secondCompRndBtn:(id)sender forEvent:(UIEvent *)event;
+- (IBAction)competitionRoundBtn:(UIButton *)sender forEvent:(UIEvent *)event;
 
 @end

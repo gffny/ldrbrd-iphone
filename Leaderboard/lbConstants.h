@@ -18,9 +18,10 @@
 #define seg_loginToHome @"authToHomeSeg"
 #define seg_menuToRoundDetail @"menuToRoundDetailSeg"
 #define seg_menuToPlayRound @"menuToPlayRoundSeg"
-#define seg_menuToCourseDetail @"menuToCourseDetailSeg"
+#define seg_menuToCourseChoice @"menuToCourseChoiceSeg"
 #define seg_roundDetailToPlayRound @"roundDetailToPlayRoundSeg"
-#define seg_courseDetailToPlayRound @"courseDetailToPlayRoundSeg"
+#define seg_courseChoiceToCourseDetail @"courseChoiceToCourseDetailSeg"
+#define seg_playRoundToRoundOverview @"playRoundToRoundOverviewSeg"
 
 # pragma mark -
 # pragma mark NSUserDefaults keys

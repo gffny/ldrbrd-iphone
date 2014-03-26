@@ -11,6 +11,6 @@
 
 @interface lbCourseDao : NSObject
 
-+ (void) testAFNetworking;
++ (void) loadCourseById: (NSString *) courseId;
 
 @end

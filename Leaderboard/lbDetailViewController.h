@@ -11,7 +11,6 @@
 @interface lbDetailViewController : UIViewController
 
 - (IBAction)playRound:(id)sender forEvent:(UIEvent *)event;
-
-- (IBAction)courseChosen:(id)sender forEvent:(UIEvent *)event;
+- (void) observeValueForKeyPath:(NSString*)keyPath ofObject:(id)object change:(NSDictionary*)change context:(void*)context;
 
 @end

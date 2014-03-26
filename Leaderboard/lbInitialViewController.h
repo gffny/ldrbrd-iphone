@@ -10,4 +10,6 @@
 
 @interface lbInitialViewController : UIViewController
 
+-(void) handleBackendOnline: (BOOL) backendOnline withMesssage:(NSString *) message;
+
 @end

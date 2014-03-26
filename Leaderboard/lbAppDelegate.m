@@ -1,4 +1,4 @@
-//
+        //
 //  lbAppDelegate.m
 //  Leaderboard
 //
@@ -11,11 +11,56 @@
 @implementation lbAppDelegate
 
 @synthesize USER_VALIDATED;
+@synthesize BACKEND_ONLINE;
+@synthesize errorMessage;
+@synthesize initialVC;
+
+@synthesize course;
+@synthesize courseMap;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    //Check if the backend is online
+    AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
+
+    AFHTTPRequestSerializer *requestSerializer = [AFJSONRequestSerializer serializer];
+    [requestSerializer setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
+    [requestSerializer setValue:@"application/json" forHTTPHeaderField:@"Accept"];
+
+    [manager setRequestSerializer: requestSerializer];
+
+    [manager GET:@"http://localhost:8080/ldrbrd/check/c_online" parameters:Nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
+        // check if the resposne is valid
+        if(responseObject) {
+            NSLog(@"status: %@", [responseObject valueForKeyPath:@"statusCode"]);
+            if([[responseObject valueForKeyPath:@"statusCode"] isEqualToString: @"SUCCESS"]) {
+                NSLog(@"backend online");
+                BACKEND_ONLINE = TRUE;
+                [initialVC handleBackendOnline:TRUE withMesssage: NULL];
+            } else {
+                NSLog(@"backend offline");
+                BACKEND_ONLINE = FALSE;
+                [initialVC handleBackendOnline:FALSE withMesssage:@"backend offline"];
+            }
+        } else {
+            NSLog(@"response object was null");
+            BACKEND_ONLINE = FALSE;
+            [initialVC handleBackendOnline:FALSE withMesssage:@"backend offline"];
+        }
+    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+        NSLog(@"Error: %@", error);
+        BACKEND_ONLINE = FALSE;
+        [initialVC handleBackendOnline:FALSE withMesssage: @"ERROR"];
+    }];
     // Override point for customization after application launch.
+    //showLoadingScreen
+    
     return YES;
+}
+
+- (void) setInitialVC:(lbInitialViewController *) passedInitialVC
+{
+    initialVC = passedInitialVC;
 }
 							
 - (void)applicationWillResignActive:(UIApplication *)application
@@ -55,6 +100,5 @@
 {
     return YES;
 }
-
 
 @end

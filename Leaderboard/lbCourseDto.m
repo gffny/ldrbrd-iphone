@@ -7,6 +7,7 @@
 //
 
 #import "lbCourseDto.h"
+#import "lbCourseHoleDto.h"
 
 @implementation lbCourseDto
 
@@ -26,59 +27,40 @@
         holeCount = 9;
     }
     for (int key = 0; key < holeCount; key++) {
-        NSString *keyStr = [NSString stringWithFormat:@"%d", key];
-        NSDictionary *hole = [holeMap objectForKey: keyStr];
+        NSDictionary *hole = [holeMap objectForKey: [NSString stringWithFormat:@"%d", key]];
         if (hole != NULL) {
-            // TODO maybe parse the object to be a domain entity
-            //lbCourseHoleDto *courseHole = [[lbCourseDto alloc] initWithDictionary: hole];
-            [courseHoleMap addObject: hole];
+            [courseHoleMap addObject: [[lbCourseHoleDto alloc] initWithHoleDetails: hole]];
         } else {
             // TODO maybe handle this a little fucking better!
             NSLog(@"course hole is null!");
         }
-
     }
-    
-//    NSArray *sortedKeys = [[holeMap allKeys] sortedArrayUsingSelector: @selector(compare:)];
-//    courseHoleMap = [NSMutableArray array];
-//    for (NSString *key in sortedKeys) {
-//        [courseHoleMap addObject: [holeMap objectForKey: key]];
-//    }
     NSLog(@"I'm here!");
 }
 
-+ (lbCourseDto *) initWithAttributes: (NSDictionary *) jsonResult {
-    lbCourseDto *course = [[lbCourseDto alloc] init];
-    [course setCourseId: jsonResult[@"id"]];
-    [course setCourseName: jsonResult[@"courseName"]];
-    [course setPar: [jsonResult[@"par"] longValue]];
-    if([course par] > 37) {
-        [course setIsNineHole: FALSE];
-    } else {
-        [course setIsNineHole: TRUE];
+-(id) initWithCourseDetails: (NSDictionary *) jsonResult {
+    // if the object is instantiated properly
+    if ( self = [super init] ) {
+        // and the course information is ok
+        if(jsonResult) {
+            // set the data
+            [self setCourseId: jsonResult[@"id"]];
+            [self setCourseName: jsonResult[@"courseName"]];
+            [self setPar: [jsonResult[@"par"] longValue]];
+            if([self par] > 37) {
+                [self setIsNineHole: FALSE];
+            } else {
+                [self setIsNineHole: TRUE];
+            }
+            [self setTeeColour: jsonResult[@"teeColour"]];
+            [self setCourseImageRef: jsonResult[@"courseImageRef"]];            
+            [self setSlopeIndex: [jsonResult[@"slopeIndex"] doubleValue]];
+            //and return it
+            return self;
+        }
     }
-    [course setTeeColour: jsonResult[@"teeColour"]];
-    [course setCourseImageRef: jsonResult[@"courseImageRef"]];
-    [course setSlopeIndex: [jsonResult[@"slopeIndex"] doubleValue]];
-
-//    "nineHole": false,
-//    "courseName": "test course",
-//    "club": {
-//        "address": null,
-//        "clubName": "test club",
-//        "managerName": null,
-//        "dressCodePolicy": null,
-//        "greenKeeperName": null,
-//        "proGolferName": null,
-//        "id": "64fe56f5-383b-4697-bead-dd0dd42eead0"
-//    },
-//    "teeColour": "WHITE",
-//    "slopeIndex": 114.5,
-//    "par": 72,
-//    "courseImageRef": "test course image reference",
-//    "courseHoleList": null,
-//    "id": "ac48d44d-8494-4f0c-9694-f515b7eca3fb"
-    return course;
+    //otherwise return null
+    return NULL;
 }
 
 @end
